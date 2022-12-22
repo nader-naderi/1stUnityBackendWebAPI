@@ -7,10 +7,10 @@ namespace GameServer
     [Route("[controller]")]
     public class PlayerController : ControllerBase
     {
-        [HttpGet]
-        public Player Get()
+        [HttpGet("{id}")]
+        public Player Get([FromQuery] int id)
         {
-            var player = new Player();
+            var player = new Player() { Id = id };
             return player;
         }
 

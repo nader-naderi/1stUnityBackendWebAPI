@@ -4,6 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PostBuildEvent>copy SharedLibrary.dll $(OutDir)\..\Unity\Project\NDR1stUnityBackend\Assets\NDR1stBackend\DLLs\SharedLibrary.dll</PostBuildEvent>
   </PropertyGroup>
 
 </Project>
